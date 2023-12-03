@@ -58,9 +58,15 @@ body {
   padding-bottom: 20px;
  }
 
+ .visually-hidden {
+  display: none;
+}
+
  /* header */
 .header__top {
+  padding: 30px 0;
   align-items: center;
+  gap: 16px;
   justify-content: space-between;
 }
 
@@ -68,9 +74,19 @@ body {
   align-items: center;
 }
 
-.header-logo {
+.header_logo {
   margin: 0;
   margin-right: 40px;
+  width: 261px;
+  height: 54px;
+}
+
+.header-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .header_link {
@@ -82,28 +98,22 @@ body {
   margin: 0;
   color: #C93;
   font-size: 16px;
-  position: relative;
-}
-
-.Personal_Area {
-  position: absolute;
-  left: -25px;
-  top: -5px;
-}
-
-.header__bottom {
-  padding: 27px 45px;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: auto;
+}
+.header-btn {
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: 1px solid #C93;
+  color: #C93;
 }
 
 .header__buttons-item {
-  align-items: flex-start;
-  gap: 10px;
-  padding: 13px 20px;
-  border-radius: 10px;
-  outline: 1px solid #C93;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-list-item {
@@ -119,8 +129,12 @@ body {
   margin-right: 40px;
 }
 
-.header-btn {
-  color: #C93;
+.header__bottom {
+  padding: 27px 45px;
+  align-items: center;
+  background: #f1f1f1;
+  justify-content: space-between;
+  margin-right: auto;
 }
 
 
@@ -140,29 +154,29 @@ body {
 }
 
 .main-link {
-  position: relative;
   color: #F0BF5F;
+  display: inline-flex;
+  align-items: center;
 }
 
-.details {
-  position: absolute;
-  left: 85px;
-}
-
-.main-list-left {
-  margin-bottom: 24px;
-  padding: 40px 108px 45px;
-}
-
-.main-list-bottom {
-  padding: 40px 108px 45px;
+.main_speshian-right {
+  width: 573px;
+   padding: 24px;
+   align-items: self-end;
 }
 
 .main-list {
-  width: 573px;
-  padding: 212px 229px 40px 45px;
+  min-width: 300px;
 }
 
+.main-list-left {
+ width: 573px;
+ margin-bottom: 24px;
+}
+
+.main-list-bottom {
+  width: 573px;
+}
 
 .main-special-title {
   margin: 0;
@@ -185,60 +199,64 @@ body {
 
 .services-list {
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .services-list-item {
   align-items: center;
   width: 573px;
-  margin-bottom: 24px;
   outline: 1px solid coral;
 }
 
-.services-list-item:not(:nth-child(2n)){
-  margin-right: 24px;
+.services_imag {
+  width: 573px;
+  height: 165px;
 }
 
 .services-list-imag {
-  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .services-link {
-  position: relative;
   color: #C93;
   font-size: 20px;
 }
 
-.services-detalic {
-  position: absolute;
-  left: 240px;
-  bottom: 0;
+.services-detalic { 
+  display: inline-flex;
+  align-items: center;
 }
 
 .services_item-descr {
-  padding: 26px 126px 35px 45px;
+  padding: 26px 45px 35px 45px;
 }
 
+.services-item-descr {
+  min-width: 402px;
+}
 
 /* advantages */
 
 .advantages-item {
   flex-wrap: wrap;
+  gap: 22px;
 }
 
 .advantages-list-item {
   flex-direction: column;
   padding: 45px;
-  margin-bottom: 22px;
   width: 276px;
   outline: 1px solid coral;
 }
 
-.advantages-list-item:not(:nth-child(4n)) {
-  margin-right: 22px;
-}
-
 .advantages-list-icon {
   margin-bottom: 10px;
+  width: 67px;
+  height: 66px;
 }
 
 .advantages-item-descr {
@@ -251,26 +269,51 @@ body {
 
 .accomodation-list {
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .accomodation-list-item {
   align-items: center;
   width: 374px;
-  margin-bottom: 24px;
   outline: 1px solid coral;
 }
 
-.accomodation-list-item:not(:nth-child(3n)) {
-  margin-right: 24px;
+.accomodation_list-photo {
+  object-fit: cover;
+  width: 374px;
+  height: 217px;
 }
 
 .accomodation-imag {
-  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.accommodation_list-stars {
+  flex: 0 0 80px;
+  width: 100px;
+  gap: 6px;
+}
+
+.accommodation_item-stars {
+  flex: 0 0 14px;
+  width: 100%;
 }
 
 .accommodation-hero-stars {
   margin-bottom: 16px;
   margin-right: auto;
+}
+
+.accomodation-star {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 

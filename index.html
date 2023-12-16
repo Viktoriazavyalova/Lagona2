@@ -19,9 +19,11 @@
           <a href="#" class="header_logo">
             <img src="img/logo.svg" class="header-logo" alt="Logo">
           </a>
+          <address>
             <a href="tel:+74953225448" class="header_link">
-              +7 (495) 322-54-48
+              +7 495 322-54-48
             </a>
+          </address>
         </div>
         <a href="#" class="header_area">
           <img src="img/arrow.svg" class="Personal_Area" alt="Logo">
@@ -576,7 +578,7 @@
               </button>
             </div>
           </li>
-          <li class="accomodation-list-item bottom-right">
+          <li class="accomodation-list-item bottom-right flex">
             <a href="#" class="accomodation-link">
               Посмотреть все варианты
               <img src="img/details-2.svg" alt="details" class="details">
@@ -585,24 +587,112 @@
         </ul>
       </div>
     </section>
-    <section id="blog" class="blog">
-      <div class="container">
-        <h2 class="hero-title section-title">
-
+    <section id="blog" class="blog section-offset">
+      <div class="container container-blog">
+        <h2 class="hero-title  blog-title">
+          Хочу тур
         </h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+          <div class="form-blog flex">
+            <legend> Город вылета
+              <select name="city" class="flex form-title">
+                <option value="City" selected>
+                  Санкт-Петербург
+                </option>
+              </select>
+            </legend>
+            <legend> Страна
+              <select name="contry" class="flex form-title">
+                <option value="Contry" selected>
+                  Австралия
+                </option>
+              </select>
+            </legend>
+            <legend> Дата прибытия
+              <input class="flex input-title " type="date" name="data" placeholder="Выберете дату" >
+            </legend>
+            <legend> Ночей
+              <input class="flex input-title" type="number" min="0" max="6" name="" placeholder="Кол-во ночей" >
+            </legend>
+            <legend> Туристы
+              <input class="flex input-title" type="number" min="0" max="2" name="" placeholder="Кол-во гостей" required>
+            </legend>
+            <button class="form-btn btn btn-reset">
+              Найти
+            </button>
+          </div>
+        </form>
       </div>
     </section>
     <section id="contacts" class="contacts">
       <div class="container">
         <h2 class="hero-title section-title">
-
+          Контакты
         </h2>
+        <div class="contacts-section_list flex">
+          <div class="contacts-left">
+            <address class="contacts-address ">
+              <ul class="contacts-list list-reset">
+                <li class="contacts-item flex ">
+                  <strong class="contacts-item-caption">
+                    Адрес
+                  </strong>
+                  <p class="contacts-item-text">
+                    Москва, улица Юности, дом 5 строение 4, офис 2
+                  </p>
+                </li>
+                <li class="contacts-item flex">
+                  <strong class="contacts-item-caption">
+                    Телефон
+                  </strong>
+                  <a href="tel:+74995356434" class="contacts-item-linc">
+                    +7 (499) 535-64-34
+                  </a>
+                  <a href="tel:+74950050544" class="contacts-item-linc">
+                    +7(495)005-05-44
+                  </a>
+                </li>
+                <li class="contacts-item flex">
+                  <strong class="contacts-item-caption">
+                    Email
+                  </strong>
+                  <a href="mailto:lg.oona@mail.ru" class="contacts-item-linc">
+                    lg.oona@mail.ru
+                  </a>
+                  <p class="contacts-descr">
+                    по вопросам бронирования
+                  </p>
+                  <a href="mailto:hotels.ln@mail.ru" class="contacts-item-linc">
+                    hotels.ln@mail.ru
+                  </a>
+                  <p class="contacts-descr">
+                    по вопросам сотрудничества
+                  </p>
+                </li>
+                <li class="contacts-item flex">
+                  <strong class="contacts-item-caption">
+                    График
+                  </strong>
+                  <p class="contacts-item-text">
+                    Понедельник-пятница, с 10:00 до 19:00
+                  </p>
+                </li>
+              </ul>
+            </address>
+            <button class="btn contacts-btn accomodation-btn btn-reset">
+              Посторить маршрут
+            </button>
+          </div>
+          <div class="contacts-right">
+            <img src="img/contacts.jpg" alt="Ресепшен отеля">
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-
+    
   </footer>
 </body>
 

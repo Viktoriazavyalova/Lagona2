@@ -4,9 +4,9 @@
 	font-family: 'Muller';
 	src: url('fonts/MullerThinDEMO.eot');
 	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
-		url('../fonts/MullerThinDEMO.woff2') format('woff2'),
-    url('../fonts/MullerThinDEMO.woff') format('woff');
-	font-weight: 400;
+		url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff.woff') format('woff');
+	font-weight: 700;
 	font-style: normal;
   font-display: swap;
 }
@@ -15,9 +15,9 @@
 	font-family: 'Muller';
 	src: url('fonts/MullerExtraBoldDEMO.eot');
 	src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
-    url('../fonts/MullerExtraBoldDEMO.woff2') format('woff2'),
-		url('../fonts/MullerExtraBoldDEMO.woff') format('woff');
-	font-weight: 700;
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+		url('../fonts/MullerRegular.woff') format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -45,6 +45,7 @@ body {
   font-family: 'Muller',sans-serif;
   font-weight: 400;
 }
+
  /* glob */
  .list-reset {
   margin: 0;
@@ -75,6 +76,7 @@ body {
   margin-left: 40px;
   color: #333;
   font-size: 40px;
+  font-weight: 400;
  }
 
  .section-offset {
@@ -117,6 +119,10 @@ body {
   color: #666;
   font-size: 20px;
   font-weight: 500;
+  width: 164px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .header_area {
@@ -137,6 +143,7 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+
 
 .header__buttons-item {
   align-items: center;
@@ -170,6 +177,7 @@ body {
 .specia-title {
   color: #333;
   font-size: 40px;
+  font-weight: 400;
 }
 
 .special-content {
@@ -192,6 +200,7 @@ body {
    padding: 24px;
    align-items: self-end;
    padding: 40px 45px;
+   border-radius: 15px;
    background-image: url("../img/main-list-3.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -206,19 +215,15 @@ body {
  width: 573px;
  margin-bottom: 24px;
  padding: 40px 45px;
- background-image: url("../img/main-list-1.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+ border-radius: 15px;
+ background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url("../img/main-list-1.jpg") 0 0/100% auto no-repeat;
 }
 
 .main-list-bottom {
   width: 573px;
   padding: 40px 45px;
-  background-image: url("../img/main-list-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url("../img/main-list-2.jpg") 0 0/100% auto no-repeat;
 }
 
 .main-special-title {
@@ -229,6 +234,7 @@ body {
   color: #FFF;
   line-height: normal;
   max-width: 70%;
+  width: 420px;
 }
 
 .main-special_right {
@@ -238,6 +244,7 @@ body {
   font-size: 60px;
   color: #FFF;
   max-width: 50%;
+  width: 300px;
 }
 
 .main-special-content {
@@ -260,6 +267,8 @@ body {
   width: 888px;
   color: #000;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
 }
 
 /* services */
@@ -303,6 +312,10 @@ body {
 
 .services-item-descr {
   min-width: 402px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
 }
 
 /* advantages */
@@ -326,6 +339,10 @@ body {
 
 .advantages-item-descr {
   margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
 }
 
 /* accommodation */
@@ -362,6 +379,8 @@ body {
 
 .accomodation-price {
   color: #000;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .accommodation_list-stars {
@@ -396,6 +415,9 @@ body {
 .accomodation-item-places {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 16px;
+  color:#000;
+  font-weight: 400;
 }
 
 .accomodation-item-descr {
@@ -417,6 +439,8 @@ body {
 }
 
 .bottom-right {
+  position: relative;
+  align-items: self-end;
   background-image: url("../img/accomodation-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -424,10 +448,153 @@ body {
 }
 
 .accomodation-link {
+  margin-bottom: 27px;
+  position: absolute;
   color: #FFF;
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
   display: flex;
-  align-items: self-end;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+
+/* blog */
+
+.blog {
+  margin-bottom: 70px;
+}
+
+.form {
+  padding: 5px;
+}
+
+.blog-title {
+  margin: 0;
+  font-weight: 400;
+  color: #000;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.container-blog {
+  border-radius: 15px;
+  background: #E9E9E9;
+  padding: 40px;
+}
+
+.form-blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  background: #FFF;
+  padding: 31px 28px;
+  width: 1080px;
+  height: 106px;
+}
+
+.form-title {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  border: 0;
+  height: 43px;
+  width: 120%;
+}
+
+.input-title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  height: 43px;
+  width: 120%;
+}
+
+.form-btn {
+  align-items: center;
+  justify-content: center;
+  padding: 13px 30px;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: 1px solid #C93;
+  color: #C93;
+}
+
+/* contacts */
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts-section_list {
+  justify-content: space-between;
+  padding: 45px;
+  margin-bottom: 40px;
+}
+.contacts-left {
+  align-items: center;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-item-caption {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contacts-item-linc {
+  align-items: center;
+  color: #C93;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-descr {
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-item-text {
+  align-items: center;
+  width: 230px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-right {
+  width: 653px;
+  height: 528px;
+  border-radius: 10px;
+}
+.contacts-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts-item {
+  flex-direction: column;
+}
+
+.contacts-btn {
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: 1px solid #C93;
+  color: #C93;
 }

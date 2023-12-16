@@ -468,9 +468,9 @@ body {
   margin-bottom: 70px;
 }
 
-.form {
+/* .form {
   padding: 5px;
-}
+} */
 
 .blog-title {
   margin: 0;
@@ -500,7 +500,7 @@ body {
 
 .form-title {
   color: #000;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   border: 0;
   height: 43px;
@@ -536,22 +536,36 @@ body {
   padding: 45px;
   margin-bottom: 40px;
 }
-.contacts-left {
-  align-items: center;
-}
 
 .contacts-address {
   font-style: normal;
 }
 
+.contacts-item {
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-caption {
+  margin-top: 25px;
+}
+
 .contacts-item-caption {
+  margin-right: 47px;
   color: #000;
   font-size: 20px;
   font-weight: 700;
 }
 
+.contacts-strong-tel {
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.contact-strong-mail {
+  margin-bottom: 23px;
+}
+
 .contacts-item-linc {
-  align-items: center;
   color: #C93;
   font-size: 16px;
   font-weight: 400;
@@ -568,28 +582,16 @@ body {
 }
 
 .contacts-item-text {
-  align-items: center;
+  margin: 0;
+  margin-bottom: 23px;
   width: 230px;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
 
-.contacts-right {
-  width: 653px;
-  height: 528px;
-  border-radius: 10px;
-}
-.contacts-list {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contacts-item {
-  flex-direction: column;
-}
-
 .contacts-btn {
+  margin-top: 45px;
   align-items: center;
   justify-content: center;
   padding: 30px;
@@ -597,4 +599,19 @@ body {
   border-color: transparent;
   outline: 1px solid #C93;
   color: #C93;
+}
+
+.input-number {
+  border-bottom: 1px solid #E9E9E9;
+}
+.contacts-left {
+  flex-wrap: wrap;
+  width: 375px;
+  height: 528px;
+}
+
+.contacts-image {
+  max-width: 100%;
+  width: 653px;
+  height: 528px;
 }

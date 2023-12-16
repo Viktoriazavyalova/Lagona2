@@ -612,10 +612,10 @@
               <input class="flex input-title " type="date" name="data" placeholder="Выберете дату" >
             </legend>
             <legend> Ночей
-              <input class="flex input-title" type="number" min="0" max="6" name="" placeholder="Кол-во ночей" >
+              <input class="flex input-title input-number" type="number" min="0" max="6" name="" placeholder="Кол-во ночей" >
             </legend>
             <legend> Туристы
-              <input class="flex input-title" type="number" min="0" max="2" name="" placeholder="Кол-во гостей" required>
+              <input class="flex input-title input-number" type="number" min="0" max="2" name="" placeholder="Кол-во гостей" required>
             </legend>
             <button class="form-btn btn btn-reset">
               Найти
@@ -630,7 +630,7 @@
           Контакты
         </h2>
         <div class="contacts-section_list flex">
-          <div class="contacts-left">
+          <div class="contacts-left flex">
             <address class="contacts-address ">
               <ul class="contacts-list list-reset">
                 <li class="contacts-item flex ">
@@ -641,35 +641,39 @@
                     Москва, улица Юности, дом 5 строение 4, офис 2
                   </p>
                 </li>
-                <li class="contacts-item flex">
+                <li class="contacts-item contacts-caption flex">
                   <strong class="contacts-item-caption">
                     Телефон
                   </strong>
-                  <a href="tel:+74995356434" class="contacts-item-linc">
-                    +7 (499) 535-64-34
-                  </a>
-                  <a href="tel:+74950050544" class="contacts-item-linc">
-                    +7(495)005-05-44
-                  </a>
+                  <div class="contacts-strong-tel flex">
+                    <a href="tel:+74995356434" class="contacts-item-linc">
+                      +7 (499) 535-64-34
+                    </a>
+                    <a href="tel:+74950050544" class="contacts-item-linc">
+                      +7(495)005-05-44
+                    </a>
+                  </div>
                 </li>
-                <li class="contacts-item flex">
+                <li class="contacts-item contacts-caption flex">
                   <strong class="contacts-item-caption">
                     Email
                   </strong>
-                  <a href="mailto:lg.oona@mail.ru" class="contacts-item-linc">
-                    lg.oona@mail.ru
-                  </a>
-                  <p class="contacts-descr">
-                    по вопросам бронирования
-                  </p>
-                  <a href="mailto:hotels.ln@mail.ru" class="contacts-item-linc">
-                    hotels.ln@mail.ru
-                  </a>
-                  <p class="contacts-descr">
-                    по вопросам сотрудничества
-                  </p>
+                  <div class="contact-strong-mail">
+                    <a href="mailto:lg.oona@mail.ru" class="contacts-item-linc">
+                      lg.oona@mail.ru
+                    </a>
+                    <p class="contacts-descr">
+                      по вопросам бронирования
+                    </p>
+                    <a href="mailto:hotels.ln@mail.ru" class="contacts-item-linc">
+                      hotels.ln@mail.ru
+                    </a>
+                    <p class="contacts-descr">
+                      по вопросам сотрудничества
+                    </p>
+                </div>
                 </li>
-                <li class="contacts-item flex">
+                <li class="contacts-item contacts-caption flex">
                   <strong class="contacts-item-caption">
                     График
                   </strong>
@@ -684,7 +688,7 @@
             </button>
           </div>
           <div class="contacts-right">
-            <img src="img/contacts.jpg" alt="Ресепшен отеля">
+            <img class="contacts-image" src="img/contacts.jpg" alt="Ресепшен отеля">
           </div>
         </div>
       </div>

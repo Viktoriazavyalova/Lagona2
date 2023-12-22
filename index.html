@@ -594,29 +594,34 @@
         </h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
           <div class="form-blog flex">
-            <legend> Город вылета
-              <select name="city" class="flex form-title">
+            <label class="form-blog_label_widht form-blog_label">
+              <span>Город вылета</span> 
+              <select name="city" class="flex form-title" id="city">
                 <option value="City" selected>
                   Санкт-Петербург
                 </option>
               </select>
-            </legend>
-            <legend> Страна
-              <select name="contry" class="flex form-title">
+            </label>
+            <label class="form-blog_label_widht form-blog_label"> 
+              <span>Страна</span>
+              <select name="contry" class="flex form-title" id="contry">
                 <option value="Contry" selected>
                   Австралия
                 </option>
               </select>
-            </legend>
-            <legend> Дата прибытия
-              <input class="flex input-title " type="date" name="data" placeholder="Выберете дату" >
-            </legend>
-            <legend> Ночей
-              <input class="flex input-title input-number" type="number" min="0" max="6" name="" placeholder="Кол-во ночей" >
-            </legend>
-            <legend> Туристы
-              <input class="flex input-title input-number" type="number" min="0" max="2" name="" placeholder="Кол-во гостей" required>
-            </legend>
+            </label>
+            <label for="date" class="form-blog_label">
+              <span>Дата прибытия</span>
+              <input class="flex input-title " type="date" name="data"  id="data">
+            </label>
+            <label for="noch" class="form-blog_label">
+              <span> Ночей</span>
+              <input class="flex input-title input-number" type="number" min="0" max="6" name="" placeholder="Кол-во ночей" id="noch" >
+            </label>
+            <label for="gost" class="form-blog_label">
+              <span> Туристы</span>
+              <input class="flex input-title input-number" type="number" min="0" max="2" name="" placeholder="Кол-во гостей" id="gost" required>
+            </label>
             <button class="form-btn btn btn-reset">
               Найти
             </button>
@@ -630,7 +635,7 @@
           Контакты
         </h2>
         <div class="contacts-section_list flex">
-          <div class="contacts-left flex">
+          <div class="contacts-left ">
             <address class="contacts-address ">
               <ul class="contacts-list list-reset">
                 <li class="contacts-item flex ">
@@ -683,7 +688,7 @@
                 </li>
               </ul>
             </address>
-            <button class="btn contacts-btn accomodation-btn btn-reset">
+            <button class="btn contacts-btn btn-reset">
               Посторить маршрут
             </button>
           </div>
@@ -694,9 +699,65 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
-    
+    <div class="container container-footer flex"> 
+      <div class="footer-left ">
+        <p class="footer-left_title">
+          © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
+        </p>
+        <p class="footer-left_title">
+          Представленная на сайте информация носит справочный характер и не является публичной офертой
+        </p>
+        <a href="#" class="footer-left_link">
+          Пользовательское соглашение
+        </a>
+      </div>
+      <div class="footer-right flex">
+        <div class="footer-top flex">
+          <p class="footer-right_title">
+            11710, улица Юности, дом 5 строение 4, офис 2
+          </p>
+          <address class="footer-address">
+            <div class="footer-strong-tel flex">
+              <a href="tel:+74995356434" class="footer-item-linc">
+                +7 (499) 535-64-34
+              </a>
+              <a href="tel:+74950050544" class="footer-item-linc">
+                +7 (495)005-05-44
+              </a>
+            </div>
+            <div class="footer-strong-mail flex">
+              <a href="mailto:lg.oona@mail.ru" class="footer-item-linc">
+                lg.oona@mail.ru
+              </a>
+              <a href="mailto:hotels.ln@mail.ru" class="footer-item-linc">
+                hotels.ln@mail.ru
+              </a>
+          </div>
+          </address>
+          <img class="footer-logo" src="img/footer-logo.svg" alt="Солнышко">
+      </div>
+      <div class="footer-social_item flex">
+        <ul class="footer-social list-reset ">
+          <li class="social-item flex">
+            <a href="#" class="social-link social-link-group">
+              <img src="img/footer-group.svg" alt="logo-group" class="footer-icon">
+            </a>
+          </li>
+          <li class="social-item flex">
+            <a href="#" class="social-link social-link-ok">
+            <img src="img/footer-ok.svg" alt="ok" class="footer-icon">
+            </a>
+          </li>
+          <li class="social-item flex">
+            <a href="#" class="social-link social-link-vk">
+            <img src="img/footer-vk.svg" alt="vk" class="footer-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
   </footer>
 </body>
 
